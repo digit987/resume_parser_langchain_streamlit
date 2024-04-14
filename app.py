@@ -10,7 +10,7 @@ from langchain.chains.question_answering import load_qa_chain
 from langchain_community.llms import OpenAI
 
 # Load environment variables
-os.environ["OPENAI_API_KEY"] == st.secrets["db_username"]
+os.environ["OPENAI_API_KEY"] == st.secrets["OPENAI_API_KEY"]
 
 def process_text(text):
     text_splitter = CharacterTextSplitter(
