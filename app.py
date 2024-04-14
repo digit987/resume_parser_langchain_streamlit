@@ -39,9 +39,9 @@ def main():
         
         retrieved_data = process_text(text)
         
-        queries = ['Give me contact number from this resume. Only write the number, dont't describe it. For example, don't write Contact No.: 123, only 123',
-                'Give me email address from this resume. Only write the email address, dont't describe it. For example, don't write Email Address: abc, only abc',
-                'Give me all the text from this resume']
+        queries = [r'Give me contact number from this resume. Only write the number, dont't describe it. For example, don't write Contact No.: 123, only 123',
+                r'Give me email address from this resume. Only write the email address, dont't describe it. For example, don't write Email Address: abc, only abc',
+                r'Give me all the text from this resume']
         
         response_list = []
 
