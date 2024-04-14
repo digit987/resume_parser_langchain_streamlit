@@ -1,4 +1,3 @@
-from dotenv import load_dotenv
 import os
 import io
 import pandas as pd
@@ -11,7 +10,7 @@ from langchain.chains.question_answering import load_qa_chain
 from langchain_community.llms import OpenAI
 
 # Load environment variables
-load_dotenv()
+os.environ["OPENAI_API_KEY"] == st.secrets["db_username"]
 
 def process_text(text):
     text_splitter = CharacterTextSplitter(
